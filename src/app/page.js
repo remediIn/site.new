@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import Carousel from '@/components/molecules/home/Carousel'
+import HomeCarousel from '@/components/molecules/home/HomeCarousel'
 import Image_Description from '@/components/molecules/home/Image_Description'
 import Navbar from '@/components/molecules/layout/Navbar'
 import Footer from '@/components/molecules/layout/Footer'
@@ -350,7 +350,7 @@ export default function Home() {
 
       <section className="container-style">
         <div className="basis-6/12 flex flex-col justify-center items-start w-full mt-20">
-          <Carousel />
+          {/* <HomeCarousel /> */}
           <div className="flex flex-col mt-20 items-start">
             <button
               type="button"

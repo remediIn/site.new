@@ -6,7 +6,7 @@ import Carousel from 'react-bootstrap/Carousel'
 
 import ReadMoreLeft from '@/components/atoms/Button/ReadMoreLeft'
 
-export default function Carousel() {
+export default function HomeCarousel() {
   return (
     <div className="w-full">
       <Carousel controls={false} pause={false}>
