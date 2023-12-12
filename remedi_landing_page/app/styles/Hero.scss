@@ -1,0 +1,68 @@
+.hero {
+  height: 82vh;
+  width: 100%;
+  .main {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    padding: 4vw;
+    .heading {
+      padding-top: 4vh;
+      display: flex;
+      flex-direction: column;
+      gap: 3vh;
+      width: 30vw;
+      & > span {
+        font-size: 4rem;
+        font-weight: 600;
+      }
+      & > p {
+        font-size: 1.3vw;
+      }
+      & > p:nth-child(3) {
+        background-color: #9ae313;
+        width: fit-content;
+        padding: 0.5vw 1.5vw;
+        margin-top: 2vw;
+      }
+    }
+    .droneBox {
+      height: fit-content;
+      z-index: 998;
+      .drone {
+        height: 350px;
+      }
+    }
+    .que {
+      width: 30vw;
+      padding: 3vw;
+      text-align: center;
+      & > div:nth-child(1) {
+        font-size: 2.5vw;
+        margin-bottom: 3vw;
+      }
+      & > div:nth-child(2) {
+        display: flex;
+        justify-content: space-evenly;
+        a {
+          border: 1px solid black;
+          padding: 0.8vw 1.8vw;
+          border-radius: 1vw;
+          font-size: 0.9rem;
+          font-weight: 700;
+          transition: all 0.3s ease-in-out;
+          cursor: pointer;
+          &:nth-child(2) {
+            background-color: #87da12;
+            color: #ffffff;
+          }
+          &:hover{
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.Seller{
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    padding: 4vw 8vw 10vw 0;
+    justify-content: space-between;
+
+    .img{
+        position: relative;
+        img{
+            height: 100%;
+            object-fit: contain;
+        }
+        #bag{
+            position: absolute;
+            bottom: 10%;
+            right: 18%;
+            height: 150px;
+        }
+    }
+
+    .sellerDetails{
+        margin-top: 6vw;
+        &>h1{
+            font-size: 2.5rem;
+            font-weight: 600;
+            line-height: 2.5rem;
+        }
+        .keyPoints{
+            padding-left: 2vw;
+            margin: 2vw 0 3vw 0;
+            font-size: 1.4rem;
+            font-weight: 600;
+            display: flex;
+            flex-direction: column;
+            span{
+                line-height: 3rem;
+                border-bottom: 4px solid #8ad126;
+                width: fit-content;
+            }
+        }
+        &>span{
+            
+            font-size: 1.5rem;
+            font-weight: 600;
+            border: 1px solid #000;
+            padding: 0.5vw 1vw;
+            border-radius: 1vw;
+        }
+    }
+
+}

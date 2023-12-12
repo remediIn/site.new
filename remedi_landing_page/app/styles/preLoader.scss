@@ -1,0 +1,29 @@
+.preLoader{
+    opacity: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    .upper{
+        display: flex;
+        align-items: flex-end;
+        .remediText{
+            height: 90px;
+            transform: translateX(120%);
+            z-index: -1;
+        }
+        .mediBag{
+            height: 120px;
+            width: 500px;
+            object-fit: contain;
+            background-color: #fff;
+            transform: translateX(-25%);
+        }
+    }
+    &>img{
+        height: 39px;
+        transform: translateY(-100%);
+        z-index: -2;
+    }
+}
