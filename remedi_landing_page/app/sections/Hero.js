@@ -30,69 +30,65 @@ export default function Hero() {
                 start: "-=100% bottom",
                 endTrigger: "#Buyer",
                 end: "bottom 100%-=100px",
-                onUpdate: () => console.log("working"),
-                scrub: 6,
-
+                scrub: 4,
             },
         });
+
         droneTl.to("#droneBox", {
-            keyframes: [
-                {
-                    onStart: () => tl.pause(),
-                    y: '50vh',
-                    x: '15vw',
-                    // ease: 'expo.inOut',
-                },
-                {
-                    y: '94vh',
-                    x: '-15vw',
-                    onComplete: () => tl.resume(),
-                    // ease: 'expo.inOut',
-                },
-                {
-                    y: '90vh',
-                    x: '-15vw',
-                    // ease: 'expo.inOut',
-                },
-                {
-                    y: '150vh',
-                    x: '15vw',
-                    // ease: "slow(0.3,0.4,false)",
-                },
-                {
-                    y: '100vh',
-                    ease: "slow(0.3,0.4,false)",
-                },
-                {
-                    y: '100vh',
-                    ease: "linear",
-                },
-                {
-                    y: '100vh',
-                    ease: "linear",
-                },
-                {
-                    y: '100vh',
-                    ease: "slow(0.3,0.4,false)",
-                },
-                {
-                    y: '100vh',
-                    ease: "linear",
-                },
-                {
-                    y: '100vh',
-                    ease: "linear",
-                },
-            ],
+            onStart: () => tl.pause(),
+            onReverseComplete: () => tl.resume(),
+            y: '50vh',
+            x: '20vw',
+            ease: "slow(0.3,0.4,false)",
+
+            duration: 0.3,
         })
-        droneTl.to("#bag",{
-            keyframes:[
-                {
-                    y: '150vh',
-                    x: '15vw',
-                }
-            ]
-        })
+            .to("#droneBox", {
+                y: '94vh',
+                x: '-20vw',
+                onComplete: () => tl.resume(),
+                
+                ease: "slow(0.3,0.4,false)",
+                duration: 0.5,
+            })
+            .to("#droneBox", {
+                y: '94vh',
+                x: '-20vw',
+                ease: "slow(0.3,0.4,false)",
+                duration: 0.1,
+            })
+            .to("#droneBox", {
+                y: '160vh',
+                x: '20vw',
+                ease: "slow(0.3,0.4,false)"
+                // duration: 0.5,
+            })
+            .to("#bag", {
+                y: '66vh',
+                x: '40vw',
+                ease: "slow(0.3,0.4,false)"
+            }, "<")
+            .to("#droneBox", {
+                y: '160vh',
+                ease: "slow(0.3,0.4,false)"
+                // x: '-20vw',
+                // duration: 0.5,
+            })
+            .to("#droneBox", {
+                y: '94vh',
+                x: '-20vw',
+                duration: 0.5,
+            })
+            .to("#droneBox", {
+                y: '94vh',
+                x: '-20vw',
+                duration: 0.5,
+            })
+            .to("#droneBox", {
+                y: '94vh',
+                x: '-20vw',
+                duration: 1,
+            })
 
     }, [])
 
