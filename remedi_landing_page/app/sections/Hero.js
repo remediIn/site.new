@@ -38,13 +38,15 @@ export default function Hero() {
         droneTl.to("#droneBox", {
             keyframes: [
                 {
+                    onStart: () => tl.pause(),
                     y: '50vh',
                     x: '15vw',
                     // ease: 'expo.inOut',
                 },
                 {
-                    y: '90vh',
+                    y: '94vh',
                     x: '-15vw',
+                    onComplete: () => tl.resume(),
                     // ease: 'expo.inOut',
                 },
                 {
