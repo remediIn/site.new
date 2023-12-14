@@ -40,6 +40,7 @@ export default function PreLoader() {
       .to(".page",{
         y: '-82vh',
         duration: 1,
+        onComplete:()=> gsap.to(".bg1",{position:'fixed',y:0,})
       },"<")
       .to(".nav",{
         y: '-120vh',
@@ -53,13 +54,14 @@ export default function PreLoader() {
         duration: 1,
       },"<")
       .to(".page",{opacity:1},"<")
+      
   }, [])
 
   return (
     <div className="preLoader">
       <div className="upper">
         <img src="/reMedi.png" className='remediText' />
-        <img src="../favicon.ico" className='mediBag' />
+        <img src="/remediBag.png" className='mediBag' />
       </div>
       <img src="/reselMeds.png" className="lower reselMeds" />
     </div>

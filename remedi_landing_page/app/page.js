@@ -11,12 +11,16 @@ import Remedi from './sections/Remedi';
 
 function Page() {
   return (
-    <div className="page" >
-      <Hero />
-      <Seller />
-      <Remedi />
-      <Buyer />
-    </div>
+    <>
+      <img className="bg1" src="/bg02.jpg" alt="background" />
+      <div className="page" >
+
+        <Hero />
+        <Seller />
+        <Remedi />
+        <Buyer />
+      </div>
+    </>
   )
 }
 

@@ -11,3 +11,10 @@ html, body{
     height: 100%;
     width: 100%;
 }
+html::-webkit-scrollbar{
+    width: 12px;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: #a9a9a9;
+    border-radius: 6px;
+}
