@@ -15,9 +15,9 @@ export default function Buyer() {
                 <div className='right'>
                     <div className='head'>Buy these medicines at <br/>cheaper price</div>
                     <div className='info'>
-                        <span>Quality verified by remedi ✅</span>
                         <span>Don't have to suffer more because of the expensive medicines</span>
                         <span>A contribution towards a better environment</span>
+                        <span>Quality verified by remedi ✅</span>
                     </div>
                     
                 </div>
