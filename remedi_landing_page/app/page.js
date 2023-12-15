@@ -14,7 +14,6 @@ function Page() {
     <>
       <img className="bg1" src="/bg02.jpg" alt="background" />
       <div className="page" >
-
         <Hero />
         <Seller />
         <Remedi />

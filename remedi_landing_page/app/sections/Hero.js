@@ -99,39 +99,63 @@ export default function Hero() {
                 ease: "slow(0.3,0.4,false)"
             })
             .to("#droneBox", {
-                y: '300vh',
-                x: '-10vw',
+                y: '280vh',
+                x: '-26vw',
                 duration: 0.4,
                 ease: "slow(0.3,0.4,false)"
             })
             .to("#remediBag", {
-                y: '86vh',
-                x: '-39vw',
+                y: '66vh',
+                x: '-55vw',
                 ease: "slow(0.3,0.4,false)",
                 duration: 0.4,
             }, "<")
             .to("#droneBox", {
-                y: '300vh',
-                x: '-10vw',
-                duration: 0.4,
+                y: '328vh',
+                x: '-25.5vw',
+                duration: 0.6,
+                ease: "slow(0.3,0.4,false)"
+            })
+            .to("#remediBag", {
+                y: '114vh',
+                x: '-54.5vw',
+                ease: "slow(0.3,0.4,false)",
+                duration: 0.6,
+            }, "<")
+            .to("#droneBox", {
+                y: '250vh',
+                x: '-70vw',
+                duration: 0.3,
+                ease: "slow(0.3,0.4,false)"
+            })
+            .to("#buyed1, #buyed2",{
+                filter: "brightness(100%)",
+                opacity:1,
+                duration:0.1,
+                ease:"slow(0.3,0.4,false)"
+            },"<")
+            .to("#buyed1",{
+                x:'-50vh',
+                duration:0.1,
+                ease: "slow(0.3,0.4,false)"
+            },"<+=50%")
+            .to("#buyed2",{
+                // transform: 'translateY(-4vh)',
+                x:'-4vw',
+                scale: 1.2,
+                duration:0.1,
+                ease: "slow(0.3,0.4,false)"
+            },"<")
+            .to("#droneBox", {
+                y: '250vh',
+                x: '-70vw',
+                duration: 0.5,
                 ease: "slow(0.3,0.4,false)"
             })
             .to("#droneBox", {
-                y: '300vh',
-                x: '-10vw',
-                duration: 0.4,
-                ease: "slow(0.3,0.4,false)"
-            })
-            .to("#droneBox", {
-                y: '300vh',
-                x: '-10vw',
-                duration: 0.4,
-                ease: "slow(0.3,0.4,false)"
-            })
-            .to("#droneBox", {
-                y: '300vh',
-                x: '-10vw',
-                duration: 0.2,
+                y: '250vh',
+                x: '-70vw',
+                duration: 0.6,
                 ease: "slow(0.3,0.4,false)"
             })
     }, [])

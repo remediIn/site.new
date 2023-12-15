@@ -3,7 +3,7 @@ import '../styles/Remedi.scss';
 export default function Remedi() {
     return (
         <>
-            <div className='quote01'>Medicines are expensive? | Well, Not any more </div>
+            <div className='quote01'>Congratulations!!, You're Saving environment by reducing medical waste</div>
             <div className="Remedi section">
                 <div className='left'>
                     <div className='head'><span>We Ensure</span><span>Your Safty</span></div>
