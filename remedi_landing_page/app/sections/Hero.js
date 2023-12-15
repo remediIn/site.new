@@ -33,63 +33,107 @@ export default function Hero() {
                 scrub: 4,
             },
         });
+        ScrollTrigger.create({
+            trigger: "#Buyer",
+            start: "-=135% bottom",
+            end: "-=125% bottom",
+            onEnter:()=>{
+                gsap.to("#bag", {opacity:0})
+                gsap.to("#remediBag",{opacity:1, delay:0.4})
+            },
+            onEnterBack:()=>{
+                gsap.to("#remediBag", {opacity:0})
+                gsap.to("#bag",{opacity:1, delay:0.4})
+            }
+          });
 
+          
         droneTl.to("#droneBox", {
-            onStart: () => tl.pause(),
-            onReverseComplete: () => tl.resume(),
             y: '50vh',
             x: '20vw',
             ease: "slow(0.3,0.4,false)",
-
             duration: 0.3,
         })
             .to("#droneBox", {
                 y: '94vh',
-                x: '-20vw',
-                onComplete: () => tl.resume(),
-                
+                x: '-21vw',
                 ease: "slow(0.3,0.4,false)",
                 duration: 0.5,
             })
             .to("#droneBox", {
                 y: '94vh',
-                x: '-20vw',
+                x: '-21vw',
                 ease: "slow(0.3,0.4,false)",
                 duration: 0.1,
             })
             .to("#droneBox", {
-                y: '160vh',
-                x: '20vw',
+                y: '140vh',
+                x: '-25vw',
                 ease: "slow(0.3,0.4,false)"
-                // duration: 0.5,
             })
             .to("#bag", {
-                y: '66vh',
-                x: '40vw',
+                y: '46vh',
+                x: '-5vw',
                 ease: "slow(0.3,0.4,false)"
             }, "<")
             .to("#droneBox", {
-                y: '160vh',
+                y: '216vh',
+                x: '25vw',
+                ease: "slow(0.3,0.4,false)",
+                duration: 0.4,
+            })
+            .to("#bag", {
+                y: '122vh',
+                x: '45vw',
+                ease: "slow(0.3,0.4,false)",
+                duration: 0.4,
+            }, "<")
+            .to("#droneBox", {
+                y: '200vh',
+                duration:0.1,
                 ease: "slow(0.3,0.4,false)"
-                // x: '-20vw',
-                // duration: 0.5,
             })
             .to("#droneBox", {
-                y: '94vh',
-                x: '-20vw',
-                duration: 0.5,
+                y: '218vh',
+                duration: 0.1,
+                ease: "slow(0.3,0.4,false)"
             })
             .to("#droneBox", {
-                y: '94vh',
-                x: '-20vw',
-                duration: 0.5,
+                y: '300vh',
+                x: '-10vw',
+                duration: 0.4,
+                ease: "slow(0.3,0.4,false)"
+            })
+            .to("#remediBag", {
+                y: '86vh',
+                x: '-39vw',
+                ease: "slow(0.3,0.4,false)",
+                duration: 0.4,
+            }, "<")
+            .to("#droneBox", {
+                y: '300vh',
+                x: '-10vw',
+                duration: 0.4,
+                ease: "slow(0.3,0.4,false)"
             })
             .to("#droneBox", {
-                y: '94vh',
-                x: '-20vw',
-                duration: 1,
+                y: '300vh',
+                x: '-10vw',
+                duration: 0.4,
+                ease: "slow(0.3,0.4,false)"
             })
-
+            .to("#droneBox", {
+                y: '300vh',
+                x: '-10vw',
+                duration: 0.4,
+                ease: "slow(0.3,0.4,false)"
+            })
+            .to("#droneBox", {
+                y: '300vh',
+                x: '-10vw',
+                duration: 0.2,
+                ease: "slow(0.3,0.4,false)"
+            })
     }, [])
 
     const navigator = (e) => {
@@ -97,7 +141,7 @@ export default function Hero() {
         lenis.scrollTo(`#Seller`, {
             duration: 4,
             easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
-            offset: -100,
+            offset: -110,
         });
     }
 

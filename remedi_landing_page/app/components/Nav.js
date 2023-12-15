@@ -8,7 +8,7 @@ export default function Nav(){
         lenis.scrollTo(`#${e.target.innerHTML}`,{
             duration:4,
             easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
-            offset: -100,
+            offset: -110,
         });
     }
     return (
