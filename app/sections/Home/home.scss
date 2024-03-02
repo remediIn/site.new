@@ -1,0 +1,94 @@
+#home{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+    &>.info{
+        background-color: #78C110;
+        padding: 0.5vw 4vw;
+        color: #fff;
+        border-radius: 4rem;
+        font-size: 1.5rem;
+    }
+    &>.middle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        &>.head{
+            z-index: -1;
+            font-size: 18vw;
+            color: #78C110;
+            line-height: 18vw;
+            margin-top: 2vw;
+        }
+        &>.med{
+            position: absolute;
+            img{
+                height: 22vw;
+            }
+        }
+        &>.subHead{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 68%;
+            &>.left{
+                height: 10vw;
+                width: 23vw;
+
+                img{
+                    height: 100%;
+                    cursor: pointer;
+                }
+            }
+            &>.right{
+                font-size: 3.5vw;
+                line-height: 4.5vw;
+            }
+        }
+        &>.detail{
+            width: 40%;
+            font-size: 1.1vw;
+        }
+    }
+    &>.sub{
+        border: 2px solid #78C110;
+        color: #78C110;
+        border-radius: 10px;
+        padding: 0.5vw;
+        padding-left: 1vw;
+        display: flex;
+        gap: 2rem;
+        margin-top: 1vw;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+
+        &:hover{
+            background-color: #78C110;
+            color: #fff;
+            &>div{
+                rotate: -45deg;
+            }
+        }
+        &>div{
+            transition: rotate 0.2s ease-in-out;
+        }
+    }
+    &>.quote{
+        margin-top: 2vw;
+    }
+    @media (max-width: 1000px) {
+        &>.middle{
+            &>.head{
+                line-height: 25vw;
+            }
+            &>.detail{
+                font-size: 1.5vw;
+                width: 60%;
+                margin: 2vw 0;
+            }
+        }
+    }
+}
