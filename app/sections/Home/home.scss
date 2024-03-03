@@ -12,6 +12,7 @@
     font-size: 1.5rem;
   }
   & > .middle {
+    pointer-events: none;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,6 +25,7 @@
       margin-top: 2vw;
     }
     & > .med {
+      z-index: 100;
       position: absolute;
       img {
         height: 22vw;
