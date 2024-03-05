@@ -1,4 +1,6 @@
 import "./whyUs.scss";
+import Card from "@/app/components/Card/Card";
+import { experts } from "@/data";
 
 export default function WhyUs() {
     return (
@@ -6,54 +8,9 @@ export default function WhyUs() {
             <div className="topic">- Why Us ?</div>
             <div className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam odio officiis deleniti ea enim labore suscipit magnam quos pariatur eligendi.</div>
             <div className="cards">
-                <div className="card">
-                    <h1>Kinesiology</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus harum nam officia veritatis facere! Sit, ullam ut optio suscipit facere ratione deleniti enim obcaecati in voluptates animi, illum alias.</p>
-                    <div className="watermark">
-                        <img src="capsule.png" alt="" />
-                        <img src="capsule.png" alt="" />
-                    </div>
-                </div>
-                <div className="card">
-                    <h1>Kinesiology</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus harum nam officia veritatis facere! Sit, ullam ut optio suscipit facere ratione deleniti enim obcaecati in voluptates animi, illum alias.</p>
-                    <div className="watermark">
-                        <img src="capsule.png" alt="" />
-                        <img src="capsule.png" alt="" />
-                    </div>
-                </div>
-                <div className="card">
-                    <h1>Kinesiology</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus harum nam officia veritatis facere! Sit, ullam ut optio suscipit facere ratione deleniti enim obcaecati in voluptates animi, illum alias.</p>
-                    <div className="watermark">
-                        <img src="capsule.png" alt="" />
-                        <img src="capsule.png" alt="" />
-                    </div>
-                </div>
-                <div className="card">
-                    <h1>Kinesiology</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus harum nam officia veritatis facere! Sit, ullam ut optio suscipit facere ratione deleniti enim obcaecati in voluptates animi, illum alias.</p>
-                    <div className="watermark">
-                        <img src="capsule.png" alt="" />
-                        <img src="capsule.png" alt="" />
-                    </div>
-                </div>
-                <div className="card">
-                    <h1>Kinesiology</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus harum nam officia veritatis facere! Sit, ullam ut optio suscipit facere ratione deleniti enim obcaecati in voluptates animi, illum alias.</p>
-                    <div className="watermark">
-                        <img src="capsule.png" alt="" />
-                        <img src="capsule.png" alt="" />
-                    </div>
-                </div>
-                <div className="card">
-                    <h1>Kinesiology</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus harum nam officia veritatis facere! Sit, ullam ut optio suscipit facere ratione deleniti enim obcaecati in voluptates animi, illum alias.</p>
-                    <div className="watermark">
-                        <img src="capsule.png" alt="" />
-                        <img src="capsule.png" alt="" />
-                    </div>
-                </div>
+                {experts.map((review,i) => {
+                    return <Card data={review}key={i} />
+                })}
             </div>
         </div>
     );

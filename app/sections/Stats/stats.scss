@@ -1,0 +1,38 @@
+#stats{
+    margin: 8vw 0;
+    &>.topic{
+        width: 100%;
+        font-size: 2vw;
+    }
+    &>.cover{
+        display: flex;
+        justify-content: space-between;
+        height: 25vw;
+        &>.circle{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2vw;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            border: 2px dashed black;
+            &>h1{
+                color: #78C110;
+                font-size: 3.5vw;
+            }
+            &>p{
+                text-align: center;
+                width: 15vw;
+                font-size: 1vw;
+            }
+            &:nth-child(2n){
+                align-self: flex-start;
+                scale: 0.8;
+            }
+            &:nth-child(2n+1){
+                align-self: flex-end;
+            }
+        }
+    }
+}

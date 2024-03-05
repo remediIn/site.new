@@ -26,6 +26,7 @@
             background-color: #F6F6F6;
             padding: 2vw;
             border-radius: 2vw;
+            position: relative;
             h1{
                 background-color: #fff;
                 border-radius: 15px;
@@ -35,10 +36,14 @@
             }
             p{
                 width: max(18vw,220px);
+                margin-bottom: 20%;
             }
             .watermark{
                 display: flex;
                 justify-content: flex-end;
+                position: absolute;
+                bottom: 5%;
+                right: 5%;
                 img{
                     width: 20%;
                     opacity: 40%;
