@@ -11,7 +11,6 @@ export default function Home() {
   const randomTime2 = random(3, 6);
   const randomAngle = random(-10, 10);
   useEffect(() => {
-    console.clear();
     const meds = document.getElementById("med");
     gsap.set(meds, {
       x: randomX(-1),

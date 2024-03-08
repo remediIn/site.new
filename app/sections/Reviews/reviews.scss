@@ -26,6 +26,8 @@
       display: flex;
       flex-direction: column;
       padding: 2vw;
+      padding-bottom: 4vw;
+      position: relative;
 
       &:nth-child(2n + 1) {
         background-color: #78c110;
@@ -59,6 +61,8 @@
       }
       &>.rating{
         display: flex;
+        position: absolute;
+        bottom: 10%;
         align-items: center;
         margin-top: 1vw;
         &>.stars{

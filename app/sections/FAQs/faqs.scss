@@ -1,0 +1,62 @@
+#faqs {
+  margin: 4vw 0;
+  & > .topic {
+    width: 100%;
+    font-size: 3vw;
+  }
+  &>.text{
+    font-size: 1.2vw;
+    padding: 2vw 0;
+  }
+  &>.buttons{
+    display: flex;
+    gap: 1vw;
+    &>.btn{
+      display: flex;
+      gap: 0.5vw;
+      font-size: 2vw;
+      padding: 0.5vw 1vw;
+      text-transform: uppercase;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      
+      &.solid{
+        background-color: #F5F5F5;
+        color: #78C110;
+        & > div {
+          transition: rotate 0.3s ease-in-out;
+          rotate: 0deg;
+        }
+      }
+      &.hollow{
+        &>div{
+          transition: rotate 0.3s ease-in-out;
+          rotate: -45deg;
+        }
+      }
+    }
+  }
+  &>.outer{
+    background-color: #F5F5F5;
+    padding:1vw;
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    &>.faq{
+      border-bottom: 1px solid #000;
+      font-size: 1vw;
+      &>.que{
+        padding: 0.4vw ;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+      }
+      &>.ans{
+        background-color: #fff;
+        padding: 1vw 0.5vw;
+        border-radius: 10px;
+      }
+    }
+  }
+}
