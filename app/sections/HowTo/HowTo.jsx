@@ -34,7 +34,7 @@ export default function HowTo() {
     return (
         <div id="howTo" className='outfit-400'>
             <div className="topic">- How to Buy or Sell </div>
-            <div className="container">
+            <div className="containerr">
                 <div className="buttons">
                     <div className={isBuyer && "circle solid" || "circle hollow"} onClick={() => clickHnadler(true)}>
                         <span>Buyer </span>

@@ -22,7 +22,7 @@
         &>.card{
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: 1vw;
             background-color: #F6F6F6;
             padding: 2vw;
             border-radius: 2vw;
@@ -31,11 +31,12 @@
                 background-color: #fff;
                 border-radius: 15px;
                 width: fit-content;
-                padding: 0 1rem;
-                font-size: 2rem;
+                padding: 0 1vw;
+                font-size: 2vw;
             }
             p{
                 width: max(18vw,220px);
+                font-size: 1vw;
                 margin-bottom: 20%;
             }
             .watermark{

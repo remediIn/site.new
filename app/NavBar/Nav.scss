@@ -78,7 +78,7 @@ $shadowColour: rgba(0, 0, 0, 0.6);
     padding: 0.5vw;
     .l {
       margin-left: 2vw;
-      height: 2.5rem;
+      height: 2.5vw;
       img {
         height: 100%;
         cursor: pointer;
@@ -87,7 +87,7 @@ $shadowColour: rgba(0, 0, 0, 0.6);
     .c {
       display: flex;
       gap: 2.5vw;
-      font-size: 1.2rem;
+      font-size: 1.2vw;
       .links {
         cursor: pointer;
         padding: 0 10px;
@@ -102,6 +102,7 @@ $shadowColour: rgba(0, 0, 0, 0.6);
       justify-content: space-between;
       gap: 0.6vw;
       align-items: center;
+      font-size: 0.95vw;
       cursor: pointer;
       &:hover{
         &>.circle{

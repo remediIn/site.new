@@ -8,8 +8,8 @@
     background-color: #78c110;
     padding: 0.5vw 4vw;
     color: #fff;
-    border-radius: 4rem;
-    font-size: 1.5rem;
+    border-radius: 4vw;
+    font-size: 1.5vw;
   }
   & > .middle {
     pointer-events: none;
@@ -65,7 +65,7 @@
     padding: 0.5vw;
     padding-left: 1vw;
     display: flex;
-    gap: 2rem;
+    gap: 2vw;
     margin-top: 1vw;
     transition: all 0.3s ease-in-out;
     cursor: pointer;

@@ -1,0 +1,55 @@
+.teamCard{
+    &>.img{
+        // width: 30%;
+        aspect-ratio: 1;
+        border: 2px solid #000;
+        border-radius: 50%;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 50%;
+        }
+    }
+    &>.details{
+        &>.name{
+            color: #78C110;
+            font-size: 1.1vw;
+        }
+    }
+    &.leadsCard{
+        display: flex;
+        justify-content: space-between;
+        flex: 1 0 auto;
+        min-width: 450px;
+        width: 20vw;
+        height: 15vw;
+        &>.details{
+            font-size: 1vw;
+            padding: 0 2vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &>.name{
+                margin-top: 1.5vw;
+                font-size: 2vw;
+            }
+            &>.role{
+                font-size: 1.2vw;
+            }
+        }
+    }
+    &.membersCard{
+        width: 9vw;
+        text-align: center;
+        height: 10vw;
+        &>.img{
+            width: 100%;
+            margin-bottom: 1.5vw;
+        }
+        & .role{
+            font-size: 1vw;
+        }
+    }
+}

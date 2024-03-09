@@ -1,0 +1,20 @@
+#team {
+  margin: 4vw 0 8vw 0;
+  & > .topic {
+    width: 100%;
+    font-size: 3vw;
+  }
+  &>.members{
+    margin-top: 4vw;
+    &>.topic{
+        font-size: 2vw;
+    }
+  }
+  & .cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 4vw;
+    padding: 2vw;
+  }
+}

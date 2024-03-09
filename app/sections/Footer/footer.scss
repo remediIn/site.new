@@ -1,0 +1,145 @@
+#footer{
+    color: #fff;
+    margin: 10vw 0;
+    &>.up{
+        border-radius: 1.5vw;
+        display: flex;
+        &>.l{
+            display: inline-block;
+            width: 30%;
+            &>.up{
+                width: 100%;
+                background-color: #000;
+                border-top-left-radius: 4vw;
+                border-bottom-left-radius: 1.5vw;
+                padding: 3vw;
+                padding-right: 0;
+                &>span{
+                    font-size: 2vw;
+                }
+                &>h1{
+                    font-size: 3.5vw;
+                    color: #78C110;
+                }
+            }
+            &>.down{
+                background-color: #fff;
+                width: 100%;
+                display: flex;
+                border-radius: 1.3vw;
+                &>img{
+                    width: 50%;
+                    border: 8px solid #fff;
+                    border-bottom: none;
+                    border-radius: 1.3vw
+                }
+            }
+        }
+        &>.r{
+            background-color: #000;
+            border-top-right-radius: 4vw;
+            border-bottom-right-radius: 4vw;
+            border-bottom-left-radius: 1.5vw;
+            display: flex;
+            width: 70%;
+            padding: 2vw;
+            position: relative;
+            &>span{
+                width: 45%;
+                font-size: 1vw;
+            }
+            &>img{
+                position: absolute;
+                width: 50%;
+                top: -40%;
+                right: 0;
+            }
+        }
+    }
+    &>.down{
+        display: flex;
+        margin-top: 4vw;
+        gap: 2vw;
+        &>div{
+            background-color: #000;
+            border-radius: 2vw;
+            padding: 2vw;
+            flex:1 0 auto;
+            &.l{
+                width: 9%;
+                display: flex;
+                flex-direction: column;
+                &>img{
+                    height: 15%;
+                    object-fit: contain;
+                    object-position: left;
+                }
+                &>p{
+                    padding-top: 5%;
+                    flex:1 0 auto;
+                    font-size: 1vw;
+                }
+                &>.links{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: baseline;
+                    font-size: 1vw;
+                    & .icon{
+                        font-size: 1.5vw;
+                    }
+                    &>.l{
+                        display: flex;
+                        gap: 10px;
+                    }
+                }
+            }
+            &.c{
+                display: flex;
+                flex-flow: row wrap;
+                width: 10%;
+                a{
+                    width: 50%;
+                    font-size: 1.2vw;
+                    line-height: 3vw;
+                }
+            }
+            &.r{
+                width: 15%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                &>.contact{
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 1vw;
+                    a{
+                        background-color: #fff;
+                        color: #000;
+                        width: fit-content;
+                        padding: 0.4vw 0.8vw;
+                        border-radius: 10px;
+                        margin-top: 1vw;
+                    }
+                }
+                &>.download{
+                    font-size: 1.8vw;
+                    text-transform: uppercase;
+                    span{
+                        background-color: #f7f7f7;
+                        color: #000;
+                        border-radius: 50%;
+                        padding: 0.2vw;
+                        margin-left: 0.5vw;
+                        .icon{
+                            margin-bottom: 0.3vw;
+                            scale: 0.8;
+                            font-size: 2vw;
+                            rotate: -45deg;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
